@@ -1,4 +1,4 @@
-package model.entity;
+package regform.model.entity;
 
 public enum DBNoteBook {
     NOTE_ONE("Sergey", "sergey123"),

@@ -1,4 +1,4 @@
-package model;
+package regform.model;
 
 /**
  * @author Andriy Barsuk

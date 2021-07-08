@@ -1,6 +1,8 @@
-import controller.Controller;
-import model.Model;
-import view.View;
+package regform;
+
+import regform.controller.Controller;
+import regform.model.Model;
+import regform.view.View;
 
 /**
  * Basis class of the program for launching application

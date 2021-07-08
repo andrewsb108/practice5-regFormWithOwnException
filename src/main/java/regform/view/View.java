@@ -1,10 +1,10 @@
-package view;
+package regform.view;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import static view.TextConstants.INPUT_STRING_DATA;
-import static view.TextConstants.WRONG_INPUT_DATA;
+import static regform.view.TextConstants.INPUT_STRING_DATA;
+import static regform.view.TextConstants.WRONG_INPUT_DATA;
 
 /**
  * View created for displaying all output info

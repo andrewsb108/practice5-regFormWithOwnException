@@ -1,6 +1,6 @@
-package controller;
+package regform.controller;
 
-import view.View;
+import regform.view.View;
 
 import java.util.Scanner;
 
@@ -19,6 +19,7 @@ public class UtilityController {
     String inputStringValueFromScanner(String message, String regex) {
         String result;
         view.printStringInput(message);
+
         while (!(scanner.hasNext() && (result = scanner.next()).matches(regex))) {
             view.printWrongStringInput(message);
         }

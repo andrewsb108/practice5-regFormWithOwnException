@@ -1,9 +1,9 @@
-package controller;
+package regform.controller;
 
-import model.Model;
-import model.entity.NotUniqueLoginException;
-import model.entity.NoteBook;
-import view.View;
+import regform.model.Model;
+import regform.model.entity.NotUniqueLoginException;
+import regform.model.entity.NoteBook;
+import regform.view.View;
 
 import java.util.Scanner;
 
@@ -36,15 +36,15 @@ public class Controller {
     private NoteBook getNoteBook(InputNoteNoteBook inputNoteNotebook) {
         NoteBook noteBook = null;
         while (true) {
-            try {
+//            try {
                 noteBook = new NoteBook(inputNoteNotebook.getFirstName(),
                         inputNoteNotebook.getLoginData());
                 break;
-            } catch (NotUniqueLoginException e) {
-                e.printStackTrace();
-                System.out.println("Not Unique Login " + e.getLoginData());
-                inputNoteNotebook.inputLogin();
-            }
+//            } catch (NotUniqueLoginException e) {
+//                e.printStackTrace();
+//                System.out.println("Not Unique Login " + e.getLoginData());
+//                inputNoteNotebook.inputLogin();
+//            }
         }
         return noteBook;
     }

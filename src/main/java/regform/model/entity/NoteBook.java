@@ -1,4 +1,4 @@
-package model.entity;
+package regform.model.entity;
 
 public class NoteBook {
     private final String firstName;

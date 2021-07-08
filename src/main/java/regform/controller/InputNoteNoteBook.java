@@ -1,12 +1,12 @@
-package controller;
+package regform.controller;
 
-import view.View;
+import regform.view.View;
 
 import java.util.Scanner;
 
-import static controller.RegexContainer.*;
-import static view.TextConstants.FIRST_NAME;
-import static view.TextConstants.LOGIN_DATA;
+import static regform.controller.RegexContainer.*;
+import static regform.view.TextConstants.FIRST_NAME;
+import static regform.view.TextConstants.LOGIN_DATA;
 
 /**
  * @author Andriy Barsuk
@@ -41,7 +41,6 @@ public class InputNoteNoteBook {
         this.loginData = utilityController.inputStringValueFromScanner(LOGIN_DATA, REGEX_LOGIN);
     }
 
-    public void inputLogin()  {
-
+    public void inputLogin() {
     }
 }
