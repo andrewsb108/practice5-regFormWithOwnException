@@ -14,8 +14,8 @@ public class View {
     static String MESSAGE_BUNDLE_NAME = "message";
     public static final ResourceBundle bundle = ResourceBundle.getBundle(
             MESSAGE_BUNDLE_NAME,
-//            new Locale("ua", "UA"));
-          new Locale("en"));
+            new Locale("ua", "UA"));
+//          new Locale("en"));
 
     /**
      * Method serving for output data from class Controller and UtilityController

@@ -1,5 +1,6 @@
 package regform.controller;
 
+import regform.model.entity.DBNoteBook;
 import regform.view.View;
 
 import java.util.Scanner;
@@ -18,13 +19,6 @@ public class InputNoteNoteBook {
     private String firstName;
     private String loginData;
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLoginData() {
-        return loginData;
-    }
 
     InputNoteNoteBook(View view, Scanner sc) {
         this.view = view;
@@ -42,5 +36,15 @@ public class InputNoteNoteBook {
     }
 
     public void inputLogin() {
+        UtilityController utilityController = new UtilityController(view, sc);
+        this.loginData = utilityController.inputStringValueFromScanner(LOGIN_DATA, REGEX_LOGIN);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLoginData() {
+        return loginData;
     }
 }

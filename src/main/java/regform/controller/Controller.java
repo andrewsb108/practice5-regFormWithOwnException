@@ -36,15 +36,15 @@ public class Controller {
     private NoteBook getNoteBook(InputNoteNoteBook inputNoteNotebook) {
         NoteBook noteBook = null;
         while (true) {
-//            try {
+            try {
                 noteBook = new NoteBook(inputNoteNotebook.getFirstName(),
                         inputNoteNotebook.getLoginData());
                 break;
-//            } catch (NotUniqueLoginException e) {
-//                e.printStackTrace();
-//                System.out.println("Not Unique Login " + e.getLoginData());
-//                inputNoteNotebook.inputLogin();
-//            }
+            } catch (NotUniqueLoginException e) {
+                e.printStackTrace();
+                System.out.println("Not Unique Login " + e.getLoginData());
+                inputNoteNotebook.inputLogin();
+            }
         }
         return noteBook;
     }
