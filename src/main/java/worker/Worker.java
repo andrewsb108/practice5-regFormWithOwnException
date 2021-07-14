@@ -37,27 +37,33 @@ public class Worker {
         return category;
     }
 
-    public void setCategory() {
+    public void setCategory(int category) {
         this.category = category;
     }
 
     public String toString() {
         return getClass().getName() + " Name is: " + name + ", age is: " + age + ", category is: " + category;
     }
+
     @Override
     public boolean equals(Object o) {
-        if(this == o) { return true;}
-        if(o == null || getClass() != o.getClass()) { return false;}
-        if(o instanceof Worker){
-            Worker temp = (Worker)o;
-            return this.name == temp.name && this.age == temp.age && this.category == temp.category;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        if (o instanceof Worker) {
+            Worker temp = (Worker) o;
+            return this.name.equals(temp.name) && this.age == temp.age && this.category == temp.category;
         } else {
             return false;
         }
     }
+
     @Override
     public int hashCode() {
-        return (int)(31 * age + category + ((name == null) ? 0 : name.hashCode()));
+        return (int) (31 * age + category + ((name == null) ? 0 : name.hashCode()));
     }
 
     public static void main(String[] args) {
